@@ -1,0 +1,15 @@
+<h4>Edit Listings</h4>
+
+<label>New Listing Name:</label>
+<input [(ngModel)]="selectedListing.name">
+<br>
+
+<label>New Listing imageUrl:</label>
+<input [(ngModel)]="selectedListing.imageUrl">
+<br>
+
+<label>New Listing Description:</label>
+<input [(ngModel)]="selectedListing.description">
+<br>
+
+<button (click)="beginUpdatingListing(selectedListing)">Update</button>

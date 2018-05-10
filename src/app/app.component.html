@@ -1,12 +1,21 @@
+<div class="header">
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
+      <form>
+        <input type="text" name="searchbar" placeholder="Search for items or shops">
+        <button type="button" name="button">Search</button>
+      </form>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a routerLink="listings">Listings</a></li>
+      <li><a routerLink="add">Sell on Etsy</a></li>
+      <li><a routerLink="admin">Sign in</a></li>
     </ul>
   </div>
 </nav>
+</div>
 
 <div class="container">
   <h1>{{title}}</h1>

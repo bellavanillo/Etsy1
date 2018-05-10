@@ -1,0 +1,14 @@
+<h3>Sell on Etsy</h3>
+<div>
+  <label>Name:</label><br>
+  <input #newName>
+</div>
+<div>
+  <label>Image:</label><br>
+  <input #newImage>
+</div>
+<div>
+  <label>Description:</label><br>
+  <input #newDescription>
+</div>
+<button (click)="submitForm(newName.value, newImage.value, newDescription.value)">ADD</button>

@@ -1,1 +1,12 @@
-<h3>listings works</h3>
+<h2>Pet Supplies</h2>
+
+<div *ngFor="let listing of listings | async">
+  <h4 (click)="goToListing(listing)">{{listing.name}}</h4>
+  <p>{{listing.image}}</p>
+  <p>{{listing.description}}</p>
+  <div *ngIf="currentRoute === '/admin'">
+    {{listing.description}}
+    <hr>
+    <app-edit [selectedListing]="listing"></app-edit>
+  </div>
+</div>
